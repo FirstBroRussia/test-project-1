@@ -3,11 +3,11 @@ const path = require("path")
 
 module.exports = {
   // указываем путь до входной точки
-  entry: "./js/main.js",
+  entry: "./public/js/main.js",
   // описываем куда следует поместить результат работы
   output: {
     // путь до директории (важно использовать path.resolve)
-    path: path.resolve(__dirname, "js"),
+    path: path.resolve(__dirname, "public"),
     // имя файла со сборкой
     filename: "bundle.js"
   },
@@ -21,7 +21,21 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: ['babel-loader']
-      }
+      },
+      {
+        test: /\.less$/i,
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+          },
+          {
+            loader: "less-loader",
+          }
+        ]
+      },
     ]
   }
 };
