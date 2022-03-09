@@ -7,6 +7,29 @@
     </head>
     <body class="body">
       <header class="header">
+        <div class="menu-block">
+          <div class="search-block">
+            <img class="icon-search" src="img/icon/search.svg" alt="icon search" />
+            <input class="input-search" type="search" placeholder="Поиск">
+          </div>
+          <ul class="menu-block__list">
+            <li class="menu-block__item">
+              <a class="menu-block__link" href="#todo">
+                <img class="icon-profile" src="img/icon/profile.svg" alt="icon profile" />
+              </a>
+            </li>
+            <li class="menu-block__item">
+              <a class="menu-block__link" href="#todo">
+                <img class="icon-favorite" src="img/icon/favorite.svg" alt="icon favorite" />
+              </a>
+            </li>
+            <li class="menu-block__item">
+              <a class="menu-block__link" href="#todo">
+                <img class="icon-basket" src="img/icon/backet.svg" alt="icon basket" />
+              </a>
+            </li>
+          </ul>
+        </div>
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item">
@@ -46,29 +69,6 @@
             </li>
           </ul>
         </nav>
-        <div class="header-1">
-          <ul class="header-1__list">
-            <li class="header-1__item">
-              <img class="icon-search" src="img/icon/search.svg" alt="icon search" />
-              <input class="input-search" type="search" placeholder="Поиск">
-            </li>
-            <li class="header-1__item">
-              <a class="header-1__link" href="#todo">
-                <img class="icon-profile" src="img/icon/profile.svg" alt="icon profile" />
-              </a>
-            </li>
-            <li class="header-1__item">
-              <a class="header-1__link" href="#todo">
-                <img class="icon-favorite" src="img/icon/favorite.svg" alt="icon favorite" />
-              </a>
-            </li>
-            <li class="header-1__item">
-              <a class="header-1__link" href="#todo">
-                <img class="icon-basket" src="img/icon/backet.svg" alt="icon basket" />
-              </a>
-            </li>
-          </ul>
-        </div>
         <div class="breadcrumbs">
           <ul class="breadcrumbs__list">
             <li class="breadcrumbs__item">
@@ -94,8 +94,8 @@
         <div class="buy-product">
           <form class="buy-product__form" action="#">
             <div class="buy-product__user-data">
-              <input class="input-address" id="address" name="address" type="text" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152" required>
               <label class="input-adress-label" for="address">Адрес</label>
+              <input class="input-address" id="address" name="address" type="text" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152" required>
 
               <div class="buy-product__map-canvas">
                 <img class="map-canvas__img" src="img/map.png" alt="map img" />
@@ -163,4 +163,5 @@
         </div>
       </main>
     </body>
+    <script src="js/bundle.js"></script>
   </html>
