@@ -24,9 +24,9 @@ selectField.addEventListener("click", (evt) => {
 listElement.addEventListener("click", (evt) => {
   const targetElement = evt.target.closest(".item");
   if (targetElement) {
-    const valueTargetElement =
-      targetElement.querySelector(".value").textContent;
+    const valueTargetElement = targetElement.querySelector(".value").textContent;
     inputElement.value = valueTargetElement;
+    inputElement.labels[0].classList.remove('display-none');
     const textContentTargetElement = targetElement.innerText;
     selectField.textContent = textContentTargetElement;
     selectField.classList.add("selected-text");
