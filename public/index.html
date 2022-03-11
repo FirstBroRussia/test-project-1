@@ -1,200 +1,293 @@
 <!DOCTYPE html>
-  <html lang="ru">
-    <head>
-      <meta charset="UTF-8">
-      <title>КОРЗИНА</title>
-      <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body class="body">
-      <header class="header">
-        <div class="header-wrap">
-          <div class="menu-block">
-            <div class="search-block">
-              <img class="icon-search" src="img/icon/search.svg" alt="icon search" />
-              <input class="input-search" type="search" placeholder="Поиск">
-            </div>
-            <ul class="menu-block__list">
-              <li class="menu-block__item">
-                <a class="menu-block__link" href="#todo">
-                  <img class="icon-profile" src="img/icon/profile.svg" alt="icon profile" />
-                </a>
-              </li>
-              <li class="menu-block__item">
-                <a class="menu-block__link" href="#todo">
-                  <img class="icon-favorite" src="img/icon/favorite.svg" alt="icon favorite" />
-                </a>
-              </li>
-              <li class="menu-block__item">
-                <a class="menu-block__link" href="#todo">
-                  <img class="icon-basket" src="img/icon/backet.svg" alt="icon basket" />
-                </a>
-              </li>
-            </ul>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>КОРЗИНА</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body">
+    <header class="header">
+      <div class="header-wrap">
+        <div class="menu-block">
+          <div class="search-block">
+            <img
+              class="icon-search"
+              src="img/icon/search.svg"
+              alt="icon search"
+            />
+            <input class="input-search" type="search" placeholder="Поиск" />
           </div>
-          <nav class="navigation">
-            <a class="navigation__main-link order-2" href="#">
-              <img class="logo" src="img/icon/logo.svg" alt="LOGO" />
-            </a>
-            <ul class="navigation__list order-1">
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">
-                  Страница 1
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">
-                  Страница 2
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">
-                  Страница 3
-                </a>
-              </li>
-            </ul>
-            <ul class="navigation__list order-3">
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">
-                  Страница 4
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">
-                  Страница 5
-                </a>
-              </li>
-              <li class="navigation__item">
-                <a class="navigation__link" href="#">
-                  Страница 6
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="breadcrumbs">
-          <ul class="breadcrumbs__list">
-            <li class="breadcrumbs__item">
-              <a class="breadcrumbs__link" href="#todo">
-                Главная
+          <ul class="menu-block__list">
+            <li class="menu-block__item">
+              <a class="menu-block__link" href="#todo">
+                <img
+                  class="icon-profile"
+                  src="img/icon/profile.svg"
+                  alt="icon profile"
+                />
               </a>
             </li>
-            <li>
-              <a class="breadcrumbs__link" href="#todo">
-                Корзина
+            <li class="menu-block__item">
+              <a class="menu-block__link" href="#todo">
+                <img
+                  class="icon-favorite"
+                  src="img/icon/favorite.svg"
+                  alt="icon favorite"
+                />
+              </a>
+            </li>
+            <li class="menu-block__item">
+              <a class="menu-block__link" href="#todo">
+                <img
+                  class="icon-basket"
+                  src="img/icon/backet.svg"
+                  alt="icon basket"
+                />
               </a>
             </li>
           </ul>
         </div>
-      </header>
-      <main class="main">
-        <h1 class="main-title grid-area-title">Корзина</h1>
+        <nav class="navigation">
+          <a class="navigation__main-link order-2" href="#">
+            <img class="logo" src="img/icon/logo.svg" alt="LOGO" />
+          </a>
+          <ul class="navigation__list order-1">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"> Страница 1 </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"> Страница 2 </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"> Страница 3 </a>
+            </li>
+          </ul>
+          <ul class="navigation__list order-3">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"> Страница 4 </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"> Страница 5 </a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#"> Страница 6 </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="breadcrumbs">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="#todo"> Главная </a>
+          </li>
+          <li>
+            <a class="breadcrumbs__link" href="#todo"> Корзина </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main class="main">
+      <h1 class="main-title grid-area-title">Корзина</h1>
 
-        <div class="log-in grid-area-login">
-          Есть аккаунт? <a href="#todo">Войти</a>
-        </div>
+      <div class="log-in grid-area-login">
+        Есть аккаунт? <a href="#todo">Войти</a>
+      </div>
 
-        <div class="buy-product-form-wrap grid-area-form-wrap">
-          <form class="buy-product__form" action="#">
-            <div class="buy-product__user-data">
+      <div class="buy-product-form-wrap grid-area-form-wrap">
+        <form class="buy-product__form" action="#">
+          <div class="buy-product__user-data">
+            <div class="buy-product__element-wrap">
+              <label class="input-label" for="address">Адрес</label>
+              <input
+                class="buy-product__input input-address"
+                id="address"
+                name="address"
+                type="text"
+                value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152"
+                required
+              />
+            </div>
+            <div class="buy-product__inputs-wrap">
               <div class="buy-product__element-wrap">
-                <label class="input-label" for="address">Адрес</label>
-                <input class="buy-product__input input-address" id="address" name="address" type="text" value="г. Санкт-Петербург, пр. Просвещения, д. 99, кв. 152" required>
-              </div>
-              <div class="buy-product__input-wrap">
-                <div class="buy-product__element-wrap">
-                  <label class="input-label" for="name">Имя</label>
-                  <input class="buy-product__input input-name" name="name" type="text" placeholder="Ваше Имя" required>
-                </div>
-                <div class="buy-product__element-wrap">
-                  <label class="input-label" for="number">Номер</label>
-                  <input class="buy-product__input input-phonenumber" name="number" type="tel" placeholder="Ваше Телефон" required>
-                </div>
+                <label class="input-label" for="name">Имя</label>
+                <input
+                  class="buy-product__input input-name"
+                  name="name"
+                  type="text"
+                  placeholder="Ваше Имя"
+                  required
+                />
               </div>
               <div class="buy-product__element-wrap">
-                <label class="input-label" for="email">Email</label>
-                <input class="buy-product__input input-email" name="email" type="email" placeholder="Ваше Email" required>
-              </div>
-              <div class="buy-product__element-wrap">
-                <label class="input-label" for="comment">Комментарий</label>
-                <input class="buy-product__input input-comment" name="comment" type="text" placeholder="Введите комментарий">
-              </div>
-              <div class="buy-product__element-wrap">
-                <label class="input-label" for="packaging">Тип упаковки</label>
-                <select class="buy-product__input input-select-packaging" name="packaging" required>
-                  <option value="" disabled selected>Тип упаковки</option>
-                  <option value="1">Пункт 1</option>
-                  <option value="2">Пункт 2</option>
-                  <option value="3">Пункт 3</option>
-                  <option value="4">Пункт 4</option>
-                  <option value="5">Пункт 5</option>
-                </select>
+                <label class="input-label" for="number">Номер</label>
+                <input
+                  class="buy-product__input input-phonenumber"
+                  name="number"
+                  type="tel"
+                  placeholder="Ваше Телефон"
+                  required
+                />
               </div>
             </div>
-                
-            <div class="buy-product__selected-products">
-              <h2 class="selected-products__title">
-                Выбранные товары:
-              </h2>
-              <ul class="selected-products__list">
-                <li class="selected-products__item">
-                <img class="product-item__image grid-area-img" src="img/product-img.jpg" alt="Фото товара" />
+            <div class="buy-product__element-wrap">
+              <label class="input-label" for="email">Email</label>
+              <input
+                class="buy-product__input input-email"
+                name="email"
+                type="email"
+                placeholder="Ваше Email"
+                required
+              />
+            </div>
+            <div class="buy-product__element-wrap">
+              <label class="input-label" for="packaging">Тип упаковки</label>
+              <input
+                class="input display-none"
+                type="text"
+                id="input"
+                value="null"
+              />
+              <div class="select-field">Тип упаковки</div>
+              <ul class="list display-none">
+                <li class="item">
+                  Без упаковки
+                  <span class="value visibility-hidden">no-pack</span>
+                </li>
+                <li class="item">
+                  Стандартная
+                  <span class="value visibility-hidden">standart</span>
+                </li>
+                <li class="item">
+                  Подарочная
+                  <span class="value visibility-hidden">souvenir</span>
+                </li>
+              </ul>
+            </div>
+            <div class="buy-product__element-wrap">
+              <label class="input-label" for="comment">Комментарий</label>
+              <input
+                class="buy-product__input input-comment"
+                name="comment"
+                type="text"
+                placeholder="Введите комментарий"
+              />
+            </div>
+          </div>
+
+          <div class="buy-product__selected-products">
+            <h2 class="selected-products__title">Выбранные товары:</h2>
+            <ul class="selected-products__list">
+              <li class="selected-products__item">
+                <img
+                  class="product-item__image grid-area-img"
+                  src="img/product-img.jpg"
+                  alt="Фото товара"
+                />
                 <div class="product-item__info-wrap grid-area-info">
                   <h3 class="product-item__title">Товар 1</h3>
-                  <p class="product-item__description">Описание товара, которое может быть длинным</p>
+                  <p class="product-item__description">
+                    Описание товара, которое может быть длинным
+                  </p>
                   <div class="product-item__item-count">
-                    <input class="product-item__item-count__count" type="number" value="1" disabled>
-                    <button class="product-item__item-count__reduce">-</button>
-                    <button class="product-item__item-count__increase">+</button>
+                    <div class="product-item__item-count-wrap">
+                      <span class="product-item__item-count__count order-2"
+                        >1</span
+                      >
+                      <button class="product-item__item-count__reduce order-1">
+                        <img class="icon-minus" src="./img/icon/minus.svg" />
+                      </button>
+                      <button
+                        class="product-item__item-count__increase order-3"
+                      >
+                        <img class="icon-plus" src="./img/icon/plus.svg" />
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div class="product-item__price-wrap grid-area-price">
                   <p class="product-item__price">1090 руб.</p>
                   <button class="product-item__delete-button">Удалить</button>
                 </div>
-                </li>
-                <li class="selected-products__item">
-                  <img class="product-item__image grid-area-img" src="img/product-img.jpg" alt="Фото товара" />
-                  <div class="product-item__info-wrap grid-area-info">
-                    <h3 class="product-item__title">Товар 2</h3>
-                    <p class="product-item__description">Описание товара, которое может быть очень-очень длинным</p>
-                    <div class="product-item__item-count">
-                      <input class="product-item__item-count__count" type="number" value="1" disabled>
-                      <button class="product-item__item-count__reduce">-</button>
-                      <button class="product-item__item-count__increase">+</button>
+              </li>
+              <li class="selected-products__item">
+                <img
+                  class="product-item__image grid-area-img"
+                  src="img/product-img.jpg"
+                  alt="Фото товара"
+                />
+                <div class="product-item__info-wrap grid-area-info">
+                  <h3 class="product-item__title">Товар 2</h3>
+                  <p class="product-item__description">
+                    Описание товара, которое может быть очень-очень длинным
+                  </p>
+                  <div class="product-item__item-count">
+                    <div class="product-item__item-count-wrap">
+                      <span class="product-item__item-count__count order-2"
+                        >1</span
+                      >
+                      <button class="product-item__item-count__reduce order-1">
+                        <img class="icon-minus" src="./img/icon/minus.svg" />
+                      </button>
+                      <button
+                        class="product-item__item-count__increase order-3"
+                      >
+                        <img class="icon-plus" src="./img/icon/plus.svg" />
+                      </button>
                     </div>
                   </div>
-                  <div class="product-item__price-wrap grid-area-price">
-                    <p class="product-item__price">1090 руб.</p>
-                    <button class="product-item__delete-button">Удалить</button>
-                  </div>
-                </li>
-                <li class="selected-products__item">
-                  <img class="product-item__image grid-area-img" src="img/product-img.jpg" alt="Фото товара" />
-                  <div class="product-item__info-wrap grid-area-info">
-                    <h3 class="product-item__title">Товар 3</h3>
-                    <p class="product-item__description">Короткое описание товара</p>
-                    <div class="product-item__item-count">
-                      <input class="product-item__item-count__count" type="number" value="1" disabled>
-                      <button class="product-item__item-count__reduce">-</button>
-                      <button class="product-item__item-count__increase">+</button>
+                </div>
+                <div class="product-item__price-wrap grid-area-price">
+                  <p class="product-item__price">1090 руб.</p>
+                  <button class="product-item__delete-button">Удалить</button>
+                </div>
+              </li>
+              <li class="selected-products__item">
+                <img
+                  class="product-item__image grid-area-img"
+                  src="img/product-img.jpg"
+                  alt="Фото товара"
+                />
+                <div class="product-item__info-wrap grid-area-info">
+                  <h3 class="product-item__title">Товар 3</h3>
+                  <p class="product-item__description">
+                    Короткое описание товара
+                  </p>
+                  <div class="product-item__item-count">
+                    <div class="product-item__item-count-wrap">
+                      <span class="product-item__item-count__count order-2"
+                        >1</span
+                      >
+                      <button class="product-item__item-count__reduce order-1">
+                        <img class="icon-minus" src="./img/icon/minus.svg" />
+                      </button>
+                      <button
+                        class="product-item__item-count__increase order-3"
+                      >
+                        <img class="icon-plus" src="./img/icon/plus.svg" />
+                      </button>
                     </div>
                   </div>
-                  <div class="product-item__price-wrap grid-area-price">
-                    <p class="product-item__price">2000 руб.</p>
-                    <button class="product-item__delete-button">Удалить</button>
-                  </div>
-                  </li>
-              </ul>
-              <button class="product-item__form-submit" type="submit">Купить</button>
-            </div>
-          </form>
-        </div>
-        <div class="map-total-price grid-area-map-total-price">
-          <div class="map-canvas">
-            <div class="total-price">Итого: <span class="total-price__summa">3790 руб.</span></div>
+                </div>
+                <div class="product-item__price-wrap grid-area-price">
+                  <p class="product-item__price">2000 руб.</p>
+                  <button class="product-item__delete-button">Удалить</button>
+                </div>
+              </li>
+            </ul>
+            <button class="product-item__form-submit" type="submit">
+              Купить
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="map-total-price grid-area-map-total-price">
+        <div class="map-canvas">
+          <div class="total-price">
+            Итого: <span class="total-price__summa">3790 руб.</span>
           </div>
         </div>
-      </main>
-    </body>
-    <script src="./bundle.js"></script>
-  </html>
+      </div>
+    </main>
+  </body>
+  <script src="./bundle.js"></script>
+</html>
