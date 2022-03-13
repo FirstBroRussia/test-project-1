@@ -10,11 +10,12 @@ const inputHandler = (evt) => {
     targetElement.labels[0].classList.add('display-none');
 }
 
-inputs.forEach( (item) => {
+for (item of inputs) {
     if (item.value !== '') {
         item.labels[0].classList.remove('display-none');
     }
-    if (!item.classList.contains('select-input')) {
-        item.addEventListener('input', inputHandler);
+    if (item.classList.contains('select-input') || item.matches('[id="number"]')) {
+        continue;
     }
-});
+    item.addEventListener('input', inputHandler);
+}
