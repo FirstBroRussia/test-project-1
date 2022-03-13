@@ -26,7 +26,6 @@ const deleteButtonClickHandler = (evt) => {
   if (!evt.target.closest('.product-item__delete-button')) {
     return;
   }
-  console.log(evt.target.closest('.selected-products__item'));
   const currentCard = evt.target.closest('.selected-products__item');
   currentCard.remove();
 }

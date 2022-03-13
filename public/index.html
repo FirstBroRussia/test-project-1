@@ -153,7 +153,7 @@
                 value=""
                 required
               />
-              <div class="select-field vector-down">Тип упаковки</div>
+              <div class="select-field vector-down">Выберите тип упаковки</div>
               <div class="select-list-wrap">
                 <ul class="select-list display-none">
                   <li class="item">
@@ -173,13 +173,13 @@
             </div>
             <div class="buy-product__element-wrap">
               <label class="input-label display-none" for="comment">Комментарий</label>
-              <input
+              <textarea
                 class="buy-product__input input-comment"
                 name="comment"
                 id="comment"
                 type="text"
                 placeholder="Введите комментарий"
-              />
+              ></textarea>
             </div>
           </div>
 
@@ -283,7 +283,7 @@
                   </div>
                 </li>
               </ul>
-              <button class="product-item__form-submit" type="submit">
+              <button class="product-item__form-submit" type="button">
                 Купить
               </button>
             </div>
@@ -301,3 +301,7 @@
   </body>
   <script src="./bundle.js"></script>
 </html>
+
+<template class="valid-modal">
+  <div class="valid-pack-error">Выберите тип упаковки</div>
+</template>
