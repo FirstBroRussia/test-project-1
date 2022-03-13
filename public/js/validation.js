@@ -3,6 +3,7 @@ const NUMBER_VALUE_LENGTH = 16;
 const emailRegExp = /^.+@.+\..+$/gim;
 
 const submitButton = document.querySelector(".product-item__form-submit");
+const addressInputElement = document.querySelector("#address");
 const nameInputElement = document.querySelector("#name");
 const phoneNumberInputElement = document.querySelector("#number");
 const emailInputElement = document.querySelector("#email");
@@ -28,6 +29,10 @@ const actionsToInvalidField = (invalidElement, invalidMessage) => {
 const checkValidity = () => {
   let isValid = true;
 
+  if (addressInputElement.value.length === ZERO_VALUE) {
+    actionsToInvalidField(addressInputElement, InvalidMessage.EMPTY);
+    return;
+  }
   if (nameInputElement.value.length === ZERO_VALUE) {
     actionsToInvalidField(nameInputElement, InvalidMessage.EMPTY);
     return;

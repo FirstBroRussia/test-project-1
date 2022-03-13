@@ -473,6 +473,9 @@
                 .input-comment {
                   resize: none;
                 }
+                .input-comment::placeholder {
+                    transform: translateY(10px);
+                }
             }
 
             .buy-product__selected-products {
@@ -707,36 +710,44 @@
 }
 
 .map-total-price {
+    
     .map-canvas {
-        border: 5px solid green;
+        position: relative;
+        z-index: 1;
 
         width          : 1fr;
         height         : 700px;
         display        : flex;
         flex-direction : column;
         justify-content: flex-end;
+    }
+    .total-price {
+        position: absolute;
+        bottom: 0;
+        z-index: 999999999999999999999999999999;
+        box-sizing: border-box;
 
-        .total-price {
-            width  : 1fr;
-            padding: 45px 30px;
+        
+        display: block;
+        width  : 100%;
+        padding: 45px 30px;
 
-            color           : white;
-            background-color: #000000;
-            opacity         : 0.8;
+        color           : white;
+        background-color: #000000;
+        opacity         : 0.8;
 
-            display        : flex;
-            justify-content: space-between;
+        display        : flex;
+        justify-content: space-between;
 
-            font-family: 'Helvetica';
-            font-style : normal;
-            font-weight: 700;
-            font-size  : 40px;
-            line-height: 46px;
+        font-family: 'Helvetica';
+        font-style : normal;
+        font-weight: 700;
+        font-size  : 40px;
+        line-height: 46px;
 
-            font-feature-settings: 'tnum'on, 'lnum'on;
+        font-feature-settings: 'tnum'on, 'lnum'on;
 
-            color: #FFFFFF;
-        }
+        color: #FFFFFF;
     }
 }
 
