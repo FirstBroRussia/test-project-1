@@ -1,6 +1,5 @@
 import {mapCanvasNodeElement} from './markup/desktop-markup/map-canvas-markup.js';
 
-// const mapCanvas = document.querySelector('.map-canvas');
 const addressInput = document.querySelector('#address');
 
 let myMap = null;

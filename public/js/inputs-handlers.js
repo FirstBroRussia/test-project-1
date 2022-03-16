@@ -3,12 +3,10 @@ const selectField = document.querySelector(".select-field");
 
 
 const inputHandler = (evt) => {
-    console.log(evt.target);
     const targetElement = evt.target;
     targetElement.classList.remove('invalid-input-style');
     targetElement.labels[0].classList.remove('invalid-label-style');
     targetElement.setCustomValidity('');
-    console.log(targetElement.validity.valid);
     if (targetElement.value !== '') {
         targetElement.labels[0].classList.remove('display-none');
         return;

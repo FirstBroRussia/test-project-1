@@ -1,6 +1,8 @@
+import {actionsToFormSubmit} from "./form-submit";
+
 const ZERO_VALUE = 0;
 const NUMBER_VALUE_LENGTH = 16;
-const emailRegExp = /^.+@.+\..+$/gim;
+const emailRegExp = /^.+@.+\..+$/ig;
 
 const submitButton = document.querySelector(".product-item__form-submit");
 const addressInputElement = document.querySelector("#address");
@@ -10,13 +12,14 @@ const emailInputElement = document.querySelector("#email");
 const selectField = document.querySelector(".select-field");
 const packInputElement = document.querySelector('#packaging');
 
-const form = document.querySelector(".buy-product__form");
 const InvalidMessage = {
   EMPTY: "Поле не должно быть пустым",
   NUMBER: "Введите номер полностью",
   EMAIL: "Введите валидный Email",
   PACK: "Выберите тип упаковки",
 };
+
+let isValid;
 
 const actionsToInvalidField = (invalidElement, invalidMessage) => {
   invalidElement.classList.add("invalid-input-style");
@@ -27,7 +30,7 @@ const actionsToInvalidField = (invalidElement, invalidMessage) => {
 };
 
 const checkValidity = () => {
-  let isValid = true;
+  isValid = true;
 
   if (addressInputElement.value.length === ZERO_VALUE) {
     actionsToInvalidField(addressInputElement, InvalidMessage.EMPTY);
@@ -57,9 +60,7 @@ const checkValidity = () => {
     return;
   }
   if (packInputElement.value.length === ZERO_VALUE) {
-    console.log("aaa");
     selectField.classList.add('invalid-input-style');
-
     isValid = false;
   }
 
@@ -70,7 +71,6 @@ submitButton.addEventListener("click", (evt) => {
   evt.preventDefault();
   const isValidity = checkValidity();
   if (isValidity) {
-    console.log("SUCCESS");
-    form.submit();
+    actionsToFormSubmit();
   }
 });

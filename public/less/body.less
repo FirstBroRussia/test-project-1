@@ -105,6 +105,54 @@
             outline: none;
         }
 
+        .input-search::-webkit-input-placeholder {
+            font-family: "Helvetica";
+            font-style : normal;
+            font-weight: 400;
+            font-size  : 18px;
+            line-height: 21px;
+
+            font-feature-settings: "tnum"on, "lnum"on;
+
+            color: #9f9f9f;
+        }
+
+        .input-search::-moz-placeholder {
+            font-family: "Helvetica";
+            font-style : normal;
+            font-weight: 400;
+            font-size  : 18px;
+            line-height: 21px;
+
+            font-feature-settings: "tnum"on, "lnum"on;
+
+            color: #9f9f9f;
+        }
+
+        .input-search:-ms-input-placeholder {
+            font-family: "Helvetica";
+            font-style : normal;
+            font-weight: 400;
+            font-size  : 18px;
+            line-height: 21px;
+
+            font-feature-settings: "tnum"on, "lnum"on;
+
+            color: #9f9f9f;
+        }
+
+        .input-search::-ms-input-placeholder {
+            font-family: "Helvetica";
+            font-style : normal;
+            font-weight: 400;
+            font-size  : 18px;
+            line-height: 21px;
+
+            font-feature-settings: "tnum"on, "lnum"on;
+
+            color: #9f9f9f;
+        }
+
         .input-search::placeholder {
             font-family: "Helvetica";
             font-style : normal;
@@ -305,7 +353,8 @@
             font-weight          : 400;
             font-size            : 16px;
             line-height          : 18px;
-            text-decoration-line : underline;
+            -webkit-text-decoration-line : underline;
+                    text-decoration-line : underline;
             font-feature-settings: "tnum"on, "lnum"on;
 
             color: #9f9f9f;
@@ -317,7 +366,8 @@
             font-weight          : 400;
             font-size            : 16px;
             line-height          : 18px;
-            text-decoration-line : underline;
+            -webkit-text-decoration-line : underline;
+                    text-decoration-line : underline;
             font-feature-settings: "tnum"on, "lnum"on;
 
             color: #000000;
@@ -359,7 +409,8 @@
                 .buy-product__inputs-wrap {
                     display              : grid;
                     grid-template-columns: 1fr 1fr;
-                    column-gap           : 35px;
+                    -moz-column-gap           : 35px;
+                         column-gap           : 35px;
                 }
 
                 .buy-product__input,
@@ -386,6 +437,54 @@
                     outline: none;
                 }
 
+                .buy-product__input::-webkit-input-placeholder {
+                    font-family: "Helvetica";
+                    font-style : normal;
+                    font-weight: 400;
+                    font-size  : 16px;
+                    line-height: 120%;
+
+                    font-feature-settings: "tnum"on, "lnum"on;
+
+                    color: #9f9f9f;
+                }
+
+                .buy-product__input::-moz-placeholder {
+                    font-family: "Helvetica";
+                    font-style : normal;
+                    font-weight: 400;
+                    font-size  : 16px;
+                    line-height: 120%;
+
+                    font-feature-settings: "tnum"on, "lnum"on;
+
+                    color: #9f9f9f;
+                }
+
+                .buy-product__input:-ms-input-placeholder {
+                    font-family: "Helvetica";
+                    font-style : normal;
+                    font-weight: 400;
+                    font-size  : 16px;
+                    line-height: 120%;
+
+                    font-feature-settings: "tnum"on, "lnum"on;
+
+                    color: #9f9f9f;
+                }
+
+                .buy-product__input::-ms-input-placeholder {
+                    font-family: "Helvetica";
+                    font-style : normal;
+                    font-weight: 400;
+                    font-size  : 16px;
+                    line-height: 120%;
+
+                    font-feature-settings: "tnum"on, "lnum"on;
+
+                    color: #9f9f9f;
+                }
+
                 .buy-product__input::placeholder,
                 .select-field {
                     font-family: "Helvetica";
@@ -400,7 +499,10 @@
                 }
 
                 .select-field {
-                    user-select: none;
+                    -webkit-user-select: none;
+                       -moz-user-select: none;
+                        -ms-user-select: none;
+                            user-select: none;
                     cursor     : pointer;
                     width      : 1fr;
                     height     : 46px;
@@ -480,6 +582,18 @@
                 .input-comment {
                   resize: none;
                   vertical-align: bottom;
+                }
+                .input-comment::-webkit-input-placeholder {
+                    transform: translateY(10px);
+                }
+                .input-comment::-moz-placeholder {
+                    transform: translateY(10px);
+                }
+                .input-comment:-ms-input-placeholder {
+                    transform: translateY(10px);
+                }
+                .input-comment::-ms-input-placeholder {
+                    transform: translateY(10px);
                 }
                 .input-comment::placeholder {
                     transform: translateY(10px);
@@ -650,7 +764,8 @@
                                     line-height: 16px;
 
                                     text-align           : right;
-                                    text-decoration-line : underline;
+                                    -webkit-text-decoration-line : underline;
+                                            text-decoration-line : underline;
                                     font-feature-settings: "tnum"on, "lnum"on;
 
                                     color: #9f9f9f;
@@ -664,7 +779,8 @@
                                     line-height: 16px;
 
                                     text-align           : right;
-                                    text-decoration-line : underline;
+                                    -webkit-text-decoration-line : underline;
+                                            text-decoration-line : underline;
                                     font-feature-settings: "tnum"on, "lnum"on;
 
                                     color: #000000;
@@ -781,6 +897,18 @@
     
     color: #D80909 !important;
 }
+.invalid-input-style::-webkit-input-placeholder {
+    color: #D80909 !important;
+}
+.invalid-input-style::-moz-placeholder {
+    color: #D80909 !important;
+}
+.invalid-input-style:-ms-input-placeholder {
+    color: #D80909 !important;
+}
+.invalid-input-style::-ms-input-placeholder {
+    color: #D80909 !important;
+}
 .invalid-input-style::placeholder {
     color: #D80909 !important;
 }
@@ -857,6 +985,7 @@
         padding-right: 0 !important;
     }
     .map-canvas {
+        width: auto !important;
         height: 400px;
     }
     .total-price {
