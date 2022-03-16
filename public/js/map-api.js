@@ -1,4 +1,6 @@
-const mapCanvas = document.querySelector('.map-canvas');
+import {mapCanvasNodeElement} from './markup/desktop-markup/map-canvas-markup.js';
+
+// const mapCanvas = document.querySelector('.map-canvas');
 const addressInput = document.querySelector('#address');
 
 let myMap = null;
@@ -6,7 +8,7 @@ let searchControl;
 
 function initMap () {
     // Создание карты.
-    myMap = new ymaps.Map(mapCanvas, {
+    myMap = new ymaps.Map(mapCanvasNodeElement, {
         // Координаты центра карты.
         // Порядок по умолчанию: «широта, долгота».
         // Чтобы не определять координаты центра карты вручную,
