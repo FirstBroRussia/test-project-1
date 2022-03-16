@@ -43,13 +43,11 @@ const adaptiveActionsThenViewport1110px = () => {
 
 
 if (startWidthViewport < 1110) {
-    console.log('--------------------<1110');
     is1110pxViewPort = false;
     renderNodeElement(headerElement, PositionMarkup.AFTER_BEGIN, adaptiveHeaderMenuNodeElement);
     renderMapPriceToForm();
 
 } else if (startWidthViewport >= 1110) {
-    console.log('--------------------->1110');
     is1110pxViewPort = true;
     renderNodeElement(headerElement, PositionMarkup.AFTER_BEGIN, desktopHeaderMenuNodeElement);
     renderMapPriceToMain();
@@ -60,15 +58,12 @@ if (startWidthViewport < 1110) {
 
 window.addEventListener('resize', (evt) => {
     const currentViewportWidth = evt.target.innerWidth;
-    console.log(currentViewportWidth);
 
     if (currentViewportWidth < 1110 & is1110pxViewPort) {
-        console.log('--------------------<1110');
         is1110pxViewPort = false;
         adaptiveActionsThenViewportLess1110px();
         
     } else if (currentViewportWidth >= 1110 && !is1110pxViewPort) {
-        console.log('--------------------->1110');
         is1110pxViewPort = true;
         adaptiveActionsThenViewport1110px();
         
